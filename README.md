@@ -10,9 +10,15 @@
 - 运行 MCP 的环境具备合适版本的 Node.js 与 npm/npx；首次获取包需要访问 npm。预览及 PNG、SVG、可编辑 SVG 渲染需要可用的浏览器预览页。
 - 技能针对 npm 包 `@next-ai-drawio/mcp-server`。不要求所有客户端安装 Codex CLI，也不依赖固定的 MCP 服务别名或客户端工具前缀。
 
+## 安装
+
+```bash
+npx skills add wliafe/drawio-skill
+```
+
 ## 加载技能
 
-将包含 `SKILL.md` 和 `references/` 的完整 `drawio-skill` 目录，放到当前客户端实际支持的技能位置或通过其技能管理方式导入，再按该客户端要求重新加载。
+也可用手动方式：将包含 `SKILL.md` 和 `references/` 的完整 `drawio-skill` 目录，放到当前客户端实际支持的技能位置或通过其技能管理方式导入，再按该客户端要求重新加载。
 
 技能遵循 [Agent Skills 规范](https://agentskills.io/specification)。不同客户端的技能发现方式和调用语法不同，不保证所有支持 MCP 的客户端也会自动发现技能。不支持自动加载时，可手动把 `SKILL.md` 及按需引用的说明提供给 AI。
 
